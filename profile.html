@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width", initial-scale="1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Personal portfolio</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         font-family:sans-serif;
+      }
+      .header {
+         width: 100%;
+         height: 100vh;
+         background-color: lightblue;
+      }
+      nav {
+         display: flex;
+         margin: auto;
+         width: 90%;
+         padding: 20px;
+         align-items: center;
+         justify-content: space-between;
+      }
+
+       nav ul li {
+         display: inline-block;
+         list-style: none;
+         margin: 10px;
+      }
+      nav ul li a {
+         text-decoration: none;
+         color: black;
+         font-weight: bolder;
+      }
+      nav ul li a:hover {
+         background-color: seagreen;
+         border-radius: 2px;
+         color: white;
+      } 
+      .button-cv, .button-gfc{
+         display: inline-block;
+         margin-left: 0%;
+         border-radius: 5px;
+         transition: background-color 0.5s;
+         background: black;
+         padding: 10px;
+         text-decoration: none;
+         font-weight: bold;
+         color: white;
+         border: none;
+         cursor: pointer;
+      }
+       .button-cv:hover {
+         background-color: white;
+         color: black;
+      }
+
+      .button-gfc{
+         background: lightsalmon;
+      }
+
+      .button-gfc:hover {
+         background-color: white;
+         color: black;
+      } 
+      .body {
+         margin-left: 100px;
+         margin-top: 100px;
+      }
+
+      .body h1 {
+         font-size: 30px;
+         color: black;
+         margin-bottom: 20px;
+      }
+
+      .demo1 {
+         color: orange;
+         margin-bottom: 30px;
+      }
+  
+      .demo2 {
+         color: black;
+         line-height: 20px;
+      }
+
+      .button-lrn, .button-hire{
+         background: lightsalmon;
+         padding: 10px 12px;
+         text-decoration: none;
+         font-weight: bold;
+         color: whitesmoke;
+         display: inline-block;
+         margin: 30px 8px;
+         border-radius: 5px;
+         transition: background-color 0.3s;
+         border: none;
+         letter-spacing: 1px;
+         cursor: pointer;
+      }
+
+      .button-lrn:hover {
+         background-color: whitesmoke;
+         color: black;
+      }
+
+      .button-hire {
+         background: black;
+      }
+
+      .button-hire:hover {
+         background-color: seagreen;
+      }
+
+      span {
+         color: seagreen;
+       }
+      .image {
+         width: 45%;
+         height: 100%;
+         position: absolute;
+         bottom: 0;
+         right: 100px;
+        
+      }
+      .image img {
+         height: 70%;
+         position:absolute;
+         left: 50%;
+         bottom: 10%;
+         transform: translate(-70%);
+         border-radius: 300%;
+      }
+.main-section {
+	width: 100%;
+	float: left;
+	padding: 110px 0px 110px 0px;
+    background-color: lightblue;
+}
+.width-100 {
+	width: 100%;
+	float: left;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.heading-text {
+	width: 100%;
+	float: left;
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #080808;
+}
+.about-img {
+	width: 100%;
+	padding: 0px 50px;
+	margin-top: 20px;
+}
+.about-us {
+	width: 100%;
+	float: left;
+	padding: 20px;
+}
+.about-us p {
+	font-size: 16px;
+	margin-top: 15px;
+	line-height: 27px;
+}
+table {
+	width: 100%;
+}
+table th,
+table td {
+	font-size: 16px;
+	text-align: left;
+	padding: 5px 0px;
+}
+.contact form {
+	width: 66%;
+	margin: 0px auto;
+}
+.contact input,
+textarea {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	height: 40px;
+	padding: 10px;
+	border: 1px solid #a1a1a1;
+}
+.contact textarea {
+	height: 80px;
+}
+.contact button {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	height: 40px;
+	padding: 10px;
+	background: #ffbf35;
+	color: #fff;
+	border: none;
+	font-size: 16px;
+}
+.contact h3 {
+	font-size: 26px;
+	text-align: center;
+	margin-top: 60px;
+	color: #ffbf35;
+}
+.contact h4 {
+	font-size: 22px;
+	text-align: center;
+	margin-top: 10px;
+}
+.contact p {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}
+   </style>
+</head>
+<body>
+
+   <div class="header">
+      <nav>
+         <ul>
+            <li><a id="home" href="#">HOME</a></li>
+            <li><a id="about" href="#">ABOUT ME</a></li>
+            <li><a id="contact" href="#">CONTACT ME</a></li> 
+         </ul>
+      </nav>
+   
+
+
+      <div class="body">
+         <h1>Hello <br> I'm Krish<span>Thapa.</span></h1>
+         <p class="demo2"><br></p>
+         <button type="button" class="button-lrn">LEARN MORE</button>
+      </div>
+      
+   </div>
+   <div class="main-section about-us bg-lightgrey">
+    <div class="container">
+        <div class="image">
+            <img src="kris2.jpg">     
+         </div>
+      <div class="width-50">
+        <div class="about-us">
+          <h2 class="heading-text">About Me</h2>
+          <h3>I am Student of BIT </h3>
+          <p>Hi, I am krish Thapa, From lamjung,Nepal. Currently pursuing Bachelor degree in IT at KANTIPUR CITY COLLEGE, Affilated to Purbanchal University</p>
+          <div class="width-50 mt-20">
+            <table cellspacing="8" cellpadding="8">
+              <tr>
+                <th>Name:</th>
+                <td>krish Thapa</td>
+              </tr>
+              <tr>
+                <th>Email:</th>
+                <td>kt8174417@gmail.com</td>
+              </tr>
+              <tr>
+                <th>Birthday:</th>
+                <td> 26 March, 2004</td>
+              </tr>
+              <tr>
+                <th>Study:</th>
+                <td> KANTIPUR CITY COLLEGE</td>
+              </tr>
+            </table>
+          </div>
+          <div class="width-50 mt-20">
+            <table cellspacing="8" cellpadding="8">
+              <tr>
+                <th>Phone:</th>
+                <td>9862573705</td>
+              </tr>
+              <tr>
+                <th>City:</th>
+                <td>lamjung,Nepal</td>
+              </tr>
+              <tr>
+                <th>Website:</th>
+                <td> www.krissthapa.com</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="main-section contact bg-lightgrey">
+    <div class="container">
+      <h2 class="heading-text">Get In Touch</h2>
+      <div class="width-100">
+        <form>
+          <input type="text" placeholder="Full Name...">
+          <input type="text" placeholder="Full Email Id...">
+          <input type="text" placeholder="Full Mobile No...">
+          <textarea placeholder="Enter Address..."> </textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="width-33">
+        <h3>
+          <i class="fa fa-map-marker"></i>
+        </h3>
+        <h4>Address</h4>
+        <p>Raniban KATHMANDU, NEPAL</p>
+      </div>
+      <div class="width-33">
+        <h3>
+          <i class="fa fa-phone"></i>
+        </h3>
+        <h4>Phone</h4>
+        <p>9862573705</p>
+      </div>
+      <div class="width-33">
+        <h3>
+          <i class="fa fa-envelope-o"></i>
+        </h3>
+        <h4>Email</h4>
+        <p>kt8174417@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+      let home = document.getElementById("home");
+      let about = document.getElementById("about");
+      contact = document.getElementById("contact");
+
+
+
+  </script>
+</body>
+</html>
